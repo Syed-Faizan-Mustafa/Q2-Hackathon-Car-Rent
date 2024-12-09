@@ -8,4 +8,4 @@ Pages: Admin, Categories, Details and Payments.
 
 Also Pushed at git and deployed on vercel.
 githublink: https://github.com/Syed-Faizan-Mustafa/Q2-Hackathon-Car-Rent/tree/master
-Vercel Link: https://q2-hackathon-car-rent-bucppw4kk-syed-faizan-mustafa-s-projects.vercel.app/
+Vercel Link: https://q2-hackathon-car-rent-git-master-syed-faizan-mustafa-s-projects.vercel.app
