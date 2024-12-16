@@ -48,8 +48,8 @@ export default function Navbar() {
         <Image src={"/notification.png"} className="relative top-0 left-[50%] translate-x-[-50%]" alt="" width={22} height={22} />
         </div>
         
-        <Image src={"/heart-2.png"} alt="" width={22} height={22} />
-        <Image src={"/heart-2.png"} alt="" width={22} height={22} />
+        <Image src={"/setting-2.png"} alt="" width={22} height={22} />
+        <Image src={"/Image.png"} alt="" width={22} height={22} />
       </div>
     </div>
   );
