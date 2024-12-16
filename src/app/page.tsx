@@ -1,6 +1,3 @@
-
-
-
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/Components/ui/card'
+import ProductCard from "./Components/ProductCard";
 
 
 
@@ -68,6 +66,9 @@ export default function Home() {
           </Link>
         </div>
         <div className='sec grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+         <ProductCard />
+
+
           <Card className='w-full max-w-[304px] mx-auto h-auto flex flex-col justify-between'>
             <CardHeader>
               <CardTitle className='w-full flex items-center justify-between'>
@@ -99,7 +100,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className='w-full flex items-center justify-between'>
                 NissanGT - R{" "}
-                <Image src={"/heart 2.png"} alt='' width={20} height={20} />
+                <Image  src="/heart 2.png" alt="" width={20} height={20} />
               </CardTitle>
               <CardDescription>Sport</CardDescription>
             </CardHeader>

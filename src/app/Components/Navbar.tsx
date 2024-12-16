@@ -1,18 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-const styles: any = {
-  dot: {
-    position: 'absolute',
-    height: '5px',
-    width: '5px',
-    borderRadius: "100%",
-    top: -10,
-    left: '50%',
-    transform: 'translateX(-50%)',
-  },
-}
-
 export default function Navbar() {
   return (
     <div className="2xl:w-[1440px] mx-auto bg-white h-auto flex flex-col md:flex-row items-center justify-between p-4 md:p-8 border-b-2 border-b-[#e7eef6]">
