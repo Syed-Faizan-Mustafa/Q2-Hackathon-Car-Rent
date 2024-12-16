@@ -31,7 +31,13 @@ export default function Navbar() {
       </div>
       <div className="icons mt-4 md:mt-0 -[#C3D4E966] border: 1px solid flex justify-end gap-[20px]">
         <Image src={"/heartO.png"} alt="" width={22} height={22} />
+        <div className="relative">
         <Image src={"/notification.png"} alt="" width={22} height={22} />
+        </div>
+        <div className="absolute">
+        <Image src={"/Notif.jpg"} alt="" width={11} height={11} />
+        </div>
+        
         <Image src={"/heart-2.png"} alt="" width={22} height={22} />
         <Image src={"/heart-2.png"} alt="" width={22} height={22} />
       </div>
