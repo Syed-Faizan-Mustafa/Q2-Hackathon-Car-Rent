@@ -10,6 +10,7 @@ import {
 } from '@/Components/ui/card'
 import ProductCard from "./Components/ProductCard";
 import { homeCardData } from "@/Constants/constantValues";
+import { HomeProduct } from "@/services/types";
 
 
 
@@ -67,7 +68,7 @@ export default function Home() {
           </Link>
         </div>
         <div className='sec grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
-          {homeCardData.map((item: any, i: number) =>{
+          {homeCardData.map((item: HomeProduct, i: number) =>{
             return (
               <ProductCard key={i} data={item} />
             );

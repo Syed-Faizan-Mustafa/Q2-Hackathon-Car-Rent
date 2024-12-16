@@ -1,8 +1,13 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import { HomeProduct } from '@/services/types';
 
-const ProductCard = ({data}: any) => {
+interface Props {
+    data: HomeProduct;
+}
+
+const ProductCard = ({data}: Props) => {
     return (
         
             <div className='rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-[304px] mx-auto h-auto flex flex-col justify-between'>
@@ -20,7 +25,7 @@ const ProductCard = ({data}: any) => {
                 </div>
                 {/* Card content */}
                 <div className='p-6 pt-0 w-full flex flex-col items-center justify-center gap-4'>
-                    <Image src={"/car.png"} alt='' width={220} height={68} />
+                    <Image src={data.image} alt='' width={220} height={68} />
                     <Image
                         src={"/Spesification.png"}
                         alt=''
