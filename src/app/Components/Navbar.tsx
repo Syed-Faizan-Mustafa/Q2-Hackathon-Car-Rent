@@ -1,6 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
+const styles: any = {
+  dot: {
+    position: 'absolute',
+    height: '5px',
+    width: '5px',
+    borderRadius: "100%",
+    top: -10,
+    left: '50%',
+    transform: 'translateX(-50%)',
+  },
+}
+
 export default function Navbar() {
   return (
     <div className="2xl:w-[1440px] mx-auto bg-white h-auto flex flex-col md:flex-row items-center justify-between p-4 md:p-8 border-b-2 border-b-[#e7eef6]">
@@ -29,13 +41,11 @@ export default function Navbar() {
           />
         </div>
       </div>
-      <div className="icons mt-4 md:mt-0 -[#C3D4E966] border: 1px solid flex justify-end gap-[20px]">
+      <div className="icons mt-4 md:mt-0 -[#C3D4E966] border: 1px solid flex items-center gap-[20px]">
         <Image src={"/heartO.png"} alt="" width={22} height={22} />
-        <div className="relative">
-        <Image src={"/notification.png"} alt="" width={22} height={22} />
-        </div>
-        <div className="absolute">
-        <Image src={"/Notif.jpg"} alt="" width={11} height={11} />
+        <div className="h-10 w-10 border-solid 1 rounded-full flex-col justify-center" style={{border: 'solid 1px rgba(200,200,200,0.4)'}}>
+        <Image src={"/Notif.jpg"} className="relative left-[28px]" alt="" width={7} height={7} />
+        <Image src={"/notification.png"} className="relative top-0 left-[50%] translate-x-[-50%]" alt="" width={22} height={22} />
         </div>
         
         <Image src={"/heart-2.png"} alt="" width={22} height={22} />
